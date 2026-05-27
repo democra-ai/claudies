@@ -99,14 +99,6 @@ Rows are content items, columns are the profiles you've checked. Each cell encod
 | ○ | Independent | Present here, not aligned with any other profile |
 | · | Absent | Not in this profile |
 
-Click a profile name in the sidebar to slide in the detail panel:
-
-<p align="center">
-  <img src="docs/assets/profile-detail.svg" alt="Right-rail profile detail mockup with usage bars, account identity cards for owner and co-user, storage breakdown, content counts, and sharing graph." width="360">
-</p>
-
-Numbers are mocked but the layout is what you actually get — token count from `buddy-tokens.json`, account info from Cowork agent-mode session files, storage from `du -sk` per subtree, workspace link from the symlink digest.
-
 ## CLI reference
 
 ```bash
