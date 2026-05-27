@@ -83,6 +83,10 @@ CLI equivalent: `claude-multiprofile add`.
 
 **Sharing.** Two models. Extensions and skills are *symlinked* — edits propagate live both ways. MCP servers and preferences are *copy-on-apply* — you can't symlink a JSON key, so the value is written atomically (temp + rename) at Apply time.
 
+<p align="center">
+  <img src="docs/assets/share-symlink.svg" alt="Animated illustration of two profile folders; one extension subfolder in 'work' is replaced with a symlink to the same folder in 'default', showing live two-way sharing." width="720">
+</p>
+
 ## The matrix
 
 Rows are content items, columns are the profiles you've checked. Each cell encodes share state as both a glyph and a color (legible at distance and for colorblind users):
@@ -95,7 +99,13 @@ Rows are content items, columns are the profiles you've checked. Each cell encod
 | ○ | Independent | Present here, not aligned with any other profile |
 | · | Absent | Not in this profile |
 
-Click a profile name in the sidebar to slide in a detail panel with usage, accounts, storage, and sharing graph.
+Click a profile name in the sidebar to slide in the detail panel:
+
+<p align="center">
+  <img src="docs/assets/profile-detail.svg" alt="Right-rail profile detail mockup with usage bars, account identity cards for owner and co-user, storage breakdown, content counts, and sharing graph." width="360">
+</p>
+
+Numbers are mocked but the layout is what you actually get — token count from `buddy-tokens.json`, account info from Cowork agent-mode session files, storage from `du -sk` per subtree, workspace link from the symlink digest.
 
 ## CLI reference
 
