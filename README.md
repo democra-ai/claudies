@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/assets/hero-grid.svg" alt="Animated demo of the content library matrix: profiles as columns, items as rows, glyphs encoding share state. Cells animate to show toggling between absent, independent, and shared states." width="880">
+  <img src="docs/assets/hero.png" alt="Screenshot of Claudius: the title bar with traffic lights and stacked-card logo, a sidebar listing CONTENT kinds and PROFILES with a pulsing LIVE pill on the default profile, the matrix in the center grouped into Workspace / Projects / Cowork worktrees sections with glyph cells per profile column, and the right-rail profile detail showing the Today/5h/7d usage bars plus account cards for Alex Rivera (owner) and Sam Park (co-user)." width="880">
 </p>
 
 > **Disclaimer.** This is an unofficial community tool. It uses public Electron flags (`--user-data-dir`) and a stable but undocumented Claude Code environment variable (`CLAUDE_CONFIG_DIR`) to keep profiles isolated. Anthropic engineers have engaged on the open feature requests for native multi-account in both apps, so the approach is well known, but it is not officially supported. If a future Claude release changes how profiles work, this tool will need to catch up.
