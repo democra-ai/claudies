@@ -10,3 +10,8 @@ dist/
 .vscode/
 package-lock.json
 *.tar.gz
+
+# Local-only mockup / build inputs.
+# The "_" prefix marks files that are sources for a rendered output
+# (e.g. _hero-mockup.html → hero.png, _claude-icon-ref.png → icon.png).
+docs/assets/_claude-icon-ref.png
